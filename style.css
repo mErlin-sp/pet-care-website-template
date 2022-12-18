@@ -4,13 +4,6 @@ body {
     overflow-x: hidden;
 }
 
-#container {
-}
-
-#header {
-
-}
-
 #upper-header {
     height: 5vw;
     background-color: #0094DC;
@@ -50,12 +43,9 @@ body {
 #address span, #phone span {
     color: white;
     font-size: 1.1vw;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 3vw;
-}
-
-#address img, #phone img {
-    min-width: 0;
 }
 
 #address {
@@ -84,15 +74,7 @@ body {
 #logo span {
     color: #FF3B78;
     text-transform: uppercase;
-    font-size: 3vw;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 5vw;
-}
-
-#logo img {
-    min-width: 0;
-    min-height: 0;
 }
 
 #menu {
@@ -111,29 +93,12 @@ body {
     padding: 0;
 }
 
-.menu-normal-button {
+.menu-button {
     flex: 1 1 auto;
-    color: black;
-    font-size: 1.2vw;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: transparent;
-    border: none;
 }
 
 .menu-solid-button {
     flex: 2 2 auto;
-    color: white;
-    font-size: 1.5vw;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #FF3B78;
-    border: none;
-    border-radius: 3vw;
-}
-
-#content {
-    background-color: white;
 }
 
 #promo {
@@ -149,6 +114,28 @@ body {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+
+    position: relative;
+}
+
+
+#promo::before {
+    content: "";
+    width: 100%;
+    height: 4vw;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 42vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23ffffff'/></svg>");
+}
+
+@media (max-width: 850px) {
+    #promo::before {
+        height: 20.5px
+    }
 }
 
 #promo-left {
@@ -158,27 +145,21 @@ body {
 
 .promo-text-big {
     margin: 0;
-    font-size: 4vw;
 }
 
 .promo-text-small {
     margin: 2vw 0 0 0;
-    font-size: 2vw;
+}
+
+#promo .solid-button {
+    margin: 3vw 0;
 }
 
 .promo-solid-button {
     color: #EFFAFC;
-    font-size: 1vw;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
 
-    margin: 3vw 0;
     width: 13vw;
     height: 3vw;
-
-    background-color: #FF3B78;
-    border: none;
-    border-radius: 5vw;
 }
 
 #promo-care {
@@ -198,11 +179,7 @@ body {
 }
 
 #promo-care span {
-    font-size: 1vw;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 10vw;
-    text-align: center;
 }
 
 #promo-right {
@@ -214,19 +191,12 @@ body {
     padding-right: 50px;
 }
 
-#pet-care-services {
+#services {
     padding: 0 10vw;
     margin-bottom: 10vw;
 }
 
-#pet-care-services .title {
-    font-size: 2vw;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-#pet-care-services #slider {
+#services-slider {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -256,20 +226,6 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
-.service-info p {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-.service-info p:first-child {
-    font-size: 2vw;
-    font-weight: bold;
-}
-
-.service-info p:last-child {
-    font-size: 1vw;
-}
-
 #animals {
     display: flex;
     flex-direction: row;
@@ -289,7 +245,7 @@ body {
 
 #animals-right {
     flex: 1 1;
-    padding: 5vw;
+    padding: 5vw 0 5vw 5vw;
 }
 
 #emergency {
@@ -322,18 +278,12 @@ body {
     overflow: hidden;
 }
 
-.emergency-text-big, .emergency-text-small {
-    font-family: Arial, Helvetica, sans-serif;
+#emergency-info > * {
+    flex: 1 1 auto;
 }
 
-.emergency-text-big {
+#emergency-info > p {
     margin: 0;
-    font-size: 2vw;
-}
-
-.emergency-text-small {
-    margin: 0;
-    font-size: 1vw;
 }
 
 #emergency-info img {
@@ -341,10 +291,6 @@ body {
     width: 5vw;
     height: 5vw;
     margin: 2vw 0;
-}
-
-#emergency-info > * {
-    flex: 1 1 auto;
 }
 
 #opinion {
@@ -430,6 +376,10 @@ body {
     font-size: 1vw;
 }
 
+.text-1-2vw {
+    font-size: 1.2vw;
+}
+
 .text-1-5vw {
     font-size: 1.5vw;
 }
@@ -462,4 +412,12 @@ body {
 .solid-button {
     background-color: #FF3B78;
     border: none;
+}
+
+.border-radius-3 {
+    border-radius: 3vw;
+}
+
+.border-radius-5 {
+    border-radius: 5vw;
 }
