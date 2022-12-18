@@ -182,12 +182,8 @@ body {
     line-height: 10vw;
 }
 
-#promo-right {
+#promo > img {
     flex: 6 6;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
     padding-right: 50px;
 }
 
