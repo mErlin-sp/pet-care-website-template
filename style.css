@@ -102,6 +102,10 @@ body {
     flex: 2 2 auto;
 }
 
+#content {
+
+}
+
 #promo {
     height: 50vw;
     background-color: #EFFAFC;
@@ -330,6 +334,7 @@ body {
     margin: 0;
 }
 
+
 #footer {
     color: white;
     height: 30vw;
@@ -454,4 +459,30 @@ body {
 
 .margin-bottom-2vw {
     margin: 0 0 2vw 0;
+}
+
+@media screen and (max-width: 600px) {
+    #promo > img {
+        display: none;
+    }
+
+    #services-slider {
+        flex-direction: column;
+        gap: 10vw;
+    }
+
+    #animals {
+        flex-direction: column;
+    }
+
+    #emergency-info {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #opinion {
+        background-image: none;
+        padding: 0 10vw;
+    }
 }
