@@ -202,23 +202,21 @@ body {
 
 #animals {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 5vw 10vw;
 }
 
 #animals-left {
-    flex: 1 1;
+    flex: 1;
 }
 
 #animals-left img {
     width: 100%;
-    border-radius: 1vw;
 }
 
 #animals-right {
-    flex: 1 1;
+    flex: 1;
     padding: 5vw 0 5vw 5vw;
 }
 
@@ -227,42 +225,25 @@ body {
 }
 
 #emergency {
-    height: 50vw;
-
     background-image: url("res/dog-and-cameraman.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: contain;
 
-    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 #emergency-info {
-    position: absolute;
-    top: 50%;
-    left: 10vw;
-    transform: translate(0, -50%);
-
     width: 20vw;
     height: 30vw;
     background-color: white;
-    border-radius: 1vw;
+    margin: 10vw 0 10vw 10vw;
 
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
-    /*align-items: flex-start;*/
     padding: 1vw 4vw;
-    overflow: hidden;
-}
-
-#emergency-info > * {
-    /*flex: 1 1 auto;*/
-}
-
-#emergency-info .solid-button {
-    width: 16vw;
-    height: 4vw;
 }
 
 #emergency-info img {
@@ -462,17 +443,26 @@ body {
 
     #services-slider {
         flex-direction: column;
-        gap: 10vw;
+        gap: 10vmax;
     }
 
     #animals {
         flex-direction: column;
     }
 
+    #emergency {
+        justify-content: center;
+        background-size: cover;
+    }
+
     #emergency-info {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        width: 80vmin;
+        height: 80vmin;
+        margin: 10vmin;
+    }
+
+    #emergency-info img{
+        display: none;
     }
 
     #opinion {
