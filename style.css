@@ -173,18 +173,17 @@ body {
 
 #services-slider {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 2vw;
 }
 
 .service {
     position: relative;
+    margin-bottom: max(1vmax, 20px);
 }
 
 .service img {
     width: 100%;
-    border-radius: 1vw;
 }
 
 .service-info {
