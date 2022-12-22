@@ -5,51 +5,47 @@ body {
 }
 
 #upper-header {
-    height: 5vw;
     background-color: #0094DC;
     padding: 0 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
 }
 
 #social {
-    width: 20vw;
-    float: left;
-    margin: 1vw 0;
+    margin: 1vw auto 1vw 0;
 
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
     gap: 3vw;
-    overflow: hidden;
 }
 
 #social img {
-    flex: 1 1 auto;
-    min-width: 0;
-    aspect-ratio: 1/1;
+    flex: none;
+    width: max(3vmax, 10px);
+    height: max(3vmax, 10px);
 }
 
 #address, #phone {
-    /*width: 20vw;*/
-    height: 3vw;
-    float: right;
     margin: 1vw 0;
 
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
     justify-content: right;
     gap: 0.5vw;
-    overflow: hidden;
 }
 
 #address span, #phone span {
     color: white;
-    font-size: 1.1vw;
+    font-size: max(1.5vmax, 10px);
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 3vw;
 }
 
-#address {
-    margin-right: 5vw;
+#address img, #phone img {
+    flex: none;
+    width: max(3vmax, 10px);
+    height: max(3vmax, 10px);
 }
 
 #bottom-header {
@@ -461,7 +457,7 @@ body {
     margin: 0 0 2vw 0;
 }
 
-@media screen and (max-width: 600px) {
+@media (orientation: portrait) or (max-width: 600px) {
     #promo > img {
         display: none;
     }
