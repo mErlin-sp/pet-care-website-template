@@ -50,7 +50,6 @@ body {
 }
 
 #bottom-header {
-    /*height: 8vw;*/
     background-color: #EFFAFC;
     padding: 0 10vw;
 
@@ -71,7 +70,6 @@ body {
 #logo span {
     color: #FF3B78;
     text-transform: uppercase;
-    /*line-height: 5vw;*/
 }
 
 #logo img {
@@ -92,9 +90,7 @@ body {
     padding: 0;
 }
 
-
 #promo {
-    height: 50vw;
     background-color: #EFFAFC;
     padding: 0 10vw;
 
@@ -104,12 +100,9 @@ body {
     /*mask: var(--mask);*/
 
     display: flex;
-    flex-direction: row;
-    overflow: hidden;
 
     position: relative;
 }
-
 
 #promo::before {
     content: "";
@@ -131,8 +124,8 @@ body {
 }
 
 #promo-left {
-    flex: 4 4 auto;
-    padding-top: 5vw;
+    flex: 4;
+    padding-top: max(5vmax, 20px);
 }
 
 .promo-text-big {
@@ -140,7 +133,7 @@ body {
 }
 
 .promo-text-small {
-    margin: 2vw 0 0 0;
+    margin-top: 2vw;
 }
 
 #promo .solid-button {
@@ -148,28 +141,29 @@ body {
 }
 
 #promo-care {
-    width: 30vw;
-    height: 10vw;
     background-color: white;
-    border-radius: 1vw;
 
     display: flex;
-    flex-direction: row;
+    align-items: center;
     gap: 2vw;
     padding: 1vw;
+    margin-bottom: max(0.5vmax, 10px);
 }
 
 #promo-care img {
-    border-radius: 1vw;
+    flex: none;
+    width: max(15vmax, 50px);
+    height: max(15vmax, 50px);
 }
 
 #promo-care span {
-    line-height: 10vw;
+    flex: 1 auto;
 }
 
 #promo > img {
-    flex: 6 6;
-    padding-right: 50px;
+    flex: none;
+    width: 38vw;
+    align-self: flex-end;
 }
 
 #services {
@@ -362,23 +356,23 @@ body {
 }
 
 .text-1vw {
-    font-size: 1vw;
+    font-size: max(1vmax, 6px);
 }
 
 .text-1-2vw {
-    font-size: max(1.2vw, 8px);
+    font-size: max(1.2vmax, 8px);
 }
 
 .text-1-5vw {
-    font-size: max(1.5vw, 10px);
+    font-size: max(1.5vmax, 10px);
 }
 
 .text-2vw {
-    font-size: 2vw;
+    font-size: max(2vmax, 15px);
 }
 
 .text-3vw {
-    font-size: max(3vw, 20px);
+    font-size: max(3vmax, 20px);
 }
 
 .text-4vw {
@@ -436,6 +430,10 @@ body {
 .medium-button {
     width: max(10vmax, 80px);
     height: max(3vmax, 25px);
+}
+
+.border-radius-1 {
+    border-radius: 1vmax;
 }
 
 .border-radius-3 {
