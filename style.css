@@ -430,7 +430,7 @@ body {
     margin: 0 0 2vw 0;
 }
 
-@media (max-height: 600px), screen and (orientation: portrait) {
+@media (max-width: 600px), screen and (orientation: portrait) {
     #promo > img {
         display: none;
     }
