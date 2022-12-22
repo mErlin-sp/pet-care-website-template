@@ -254,8 +254,6 @@ body {
 }
 
 #opinion {
-    height: 50vw;
-
     background-image: url("res/dog-on-white-field.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -266,7 +264,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 0 50vw 0 10vw;
+    padding: 10vw 50vw 10vw 10vw;
 }
 
 #opinion > img {
@@ -298,7 +296,6 @@ body {
 
 #footer {
     color: white;
-    height: 30vw;
     background-color: #0094DC;
 
     display: flex;
@@ -316,9 +313,6 @@ body {
 
 #footer-buttons > button {
     color: white;
-    border-radius: 3vw;
-    width: 14vw;
-    height: 4vw;
     margin: 2vw 0.5vw;
     padding: 0;
 }
@@ -456,17 +450,14 @@ body {
     }
 
     #emergency-info {
-        width: 80vmin;
-        height: 80vmin;
-        margin: 10vmin;
-    }
-
-    #emergency-info img{
-        display: none;
+        width: fit-content;
+        height: fit-content;
+        padding: 5vmin;
+        margin: 10vw 10vw;
     }
 
     #opinion {
         background-image: none;
-        padding: 0 10vw;
+        padding: 10vw;
     }
 }
