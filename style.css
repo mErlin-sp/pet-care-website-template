@@ -32,6 +32,7 @@ body {
 
     display: flex;
     justify-content: right;
+    align-items: center;
     gap: 0.5vw;
 }
 
@@ -49,58 +50,48 @@ body {
 }
 
 #bottom-header {
-    height: 8vw;
+    /*height: 8vw;*/
     background-color: #EFFAFC;
     padding: 0 10vw;
-    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 #logo {
-    width: 25vw;
-    height: 5vw;
-    float: left;
-    margin: 1.5vw 0;
+    margin: 1.5vw auto 1.5vw 0;
 
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 0.1vw;
-    overflow: hidden;
 }
 
 #logo span {
     color: #FF3B78;
     text-transform: uppercase;
-    line-height: 5vw;
+    /*line-height: 5vw;*/
 }
 
-#menu {
-    float: right;
-    width: 40vw;
-    height: 4vw;
-    margin: 2vw 0;
+#logo img {
+    width: max(3vmax, 30px);
+}
 
-    display: inline-flex;
-    flex-direction: row;
+#navbar {
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 2vw;
-    overflow: hidden;
 }
 
-#menu button {
+#navbar button {
+    flex: none;
     padding: 0;
 }
 
-.menu-button {
-    flex: 1 1 auto;
-}
-
-.menu-solid-button {
-    flex: 2 2 auto;
-}
-
-#content {
-
-}
 
 #promo {
     height: 50vw;
@@ -375,11 +366,11 @@ body {
 }
 
 .text-1-2vw {
-    font-size: 1.2vw;
+    font-size: max(1.2vw, 8px);
 }
 
 .text-1-5vw {
-    font-size: 1.5vw;
+    font-size: max(1.5vw, 10px);
 }
 
 .text-2vw {
@@ -387,7 +378,7 @@ body {
 }
 
 .text-3vw {
-    font-size: 3vw;
+    font-size: max(3vw, 20px);
 }
 
 .text-4vw {
@@ -417,24 +408,34 @@ body {
     border: none;
 }
 
+/*.big-button {*/
+/*    width: 12vw;*/
+/*    height: 4vw;*/
+/*}*/
+
+/*.small-button {*/
+/*    width: 8vw;*/
+/*    height: 2vw;*/
+/*}*/
+
+/*.medium-button {*/
+/*    width: 10vw;*/
+/*    height: 3vw;*/
+/*}*/
+
 .big-button {
-    width: 12vw;
-    height: 4vw;
+    width: max(12vmax, 100px);
+    height: max(4vmax, 30px);
 }
 
 .small-button {
-    width: 8vw;
-    height: 2vw;
+    width: max(6vmax, 40px);
+    height: max(2vmax, 20px);
 }
 
 .medium-button {
-    width: 10vw;
-    height: 3vw;
-}
-
-.big-button {
-    width: 12vw;
-    height: 4vw;
+    width: max(10vmax, 80px);
+    height: max(3vmax, 25px);
 }
 
 .border-radius-3 {
