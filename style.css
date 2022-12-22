@@ -260,19 +260,24 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 10vw 50vw 10vw 10vw;
+    padding: 7vw 50vw 7vw 10vw;
 }
 
-#opinion > img {
-    width: 10vw;
-    height: 10vw;
-
-    outline: 0.3vw solid #093958;
-    outline-offset: 0.5vw;
+#customer-rounded {
+    padding: 0.3vw;
+    border: 0.3vw solid #093958;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     margin: 1vw;
+}
+
+#customer-rounded img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
 
 .quote {
