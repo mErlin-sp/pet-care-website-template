@@ -264,6 +264,7 @@ body {
 }
 
 #customer-rounded {
+    flex: none;
     padding: 0.3vw;
     border: 0.3vw solid #093958;
     border-radius: 50%;
