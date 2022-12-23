@@ -264,13 +264,12 @@ body {
 }
 
 #customer-rounded {
-    flex: none;
+    margin: 1vw;
     padding: 0.3vw;
     border: 0.3vw solid #093958;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    margin: 1vw;
 }
 
 #customer-rounded img {
@@ -279,6 +278,7 @@ body {
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
+    vertical-align: middle;
 }
 
 .quote {
